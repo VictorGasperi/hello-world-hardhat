@@ -7,8 +7,7 @@ async function main() {
   const helloWorld = await ethers.deployContract("HelloWorld", [
     "Hello, World!",
   ]);
-
-  await helloWorld.waitForDeployment();
+  
   console.log("Contract to address: ", await helloWorld.getAddress());
 }
 
