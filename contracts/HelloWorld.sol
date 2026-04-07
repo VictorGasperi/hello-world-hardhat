@@ -2,8 +2,6 @@
 
 pragma solidity ^0.8.28;
 
-import "hardhat/console.sol";
-
 contract HelloWorld {
 
     string private message;
