@@ -7,8 +7,12 @@ async function main() {
   const helloWorld = await ethers.deployContract("HelloWorld", [
     "Hello, World!",
   ]);
-  
+
   console.log("Contract to address: ", await helloWorld.getAddress());
+
+  const message = await helloWorld.getMessage();
+  console.log(message)
+
 }
 
 main().catch((err) => {

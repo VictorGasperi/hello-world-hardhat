@@ -10,7 +10,10 @@ contract HelloWorld {
 
     constructor(string memory _message) {
         message = _message;
-        console.log(message);
+    }
+
+    function getMessage() public view returns (string memory) {
+        return message;
     }
 
 }
